@@ -129,5 +129,8 @@
     ul.social_icon {
         padding-bottom: 20px;
     }
+    .choose_box{
+        overflow-y: scroll;
+    }
 }
 

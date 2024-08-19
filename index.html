@@ -4,6 +4,8 @@
       <!-- basic -->
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- Favicons -->
+      <link href="assets/img/hosea icon.jpeg" rel="icon">
       <!-- mobile metas -->
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -42,10 +44,10 @@
       <div class="wrapper">
       <!-- end loader -->
 
-      
-      <div class="sidebar">
+ <!-- This is the side menu that i decided not to go withn    -->
+  <!--    <div class="sidebar"> -->
          <!-- Sidebar  -->
-                  <nav id="sidebar">
+         <!--         <nav id="sidebar">
                               <div class = "header">
 
                                  <div id="dismiss">
@@ -57,7 +59,7 @@
                               <ul class="list-unstyled-components">
                                  <li class="active"> <a href="#"><i class='bx bxs-home'></i> &nbsp;Home</a> </li>
                                  <div class="symbols">
-                                 <li><a href="#about"><i class='bx bxs-info-circle'></i> &nbsp;About </a> </li>
+                                 <li><a href="about.html"><i class='bx bxs-info-circle'></i> &nbsp;About </a> </li>
                                  <li><a href="#work"> <i class='bx bxs-briefcase'></i> &nbsp;Projects</a> </li>
                                  <li><a href="#contact"><i class='bx bxs-contact'></i> &nbsp;Contact </a> </li>
                                  </div>
@@ -66,6 +68,7 @@
                      
                   </nav>
       </div>
+   -->
 
       <div id="content">
          <!-- header -->
@@ -77,26 +80,53 @@
                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                         <div class="full">
                            <div class="center-desk">
-                              <div class="logo">
-                                 <a href="index.html"><img src="images/logo.png" alt="#" /></a>
-                              </div>
+                              <ul class="btnA">
+                                 <li>
+                                     <div id="menu-icon">
+                                         <button type="button">
+                                             <img src="images/menu_icon.png" alt="#" height="80" width="80" />
+                                         </button>
+                                     </div>
+                                 </li>
+                                 <li>
+                                         <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                                 </li>
+                             </ul>
                            </div>
                         </div>
                      </div>
                      <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
                         <ul class="btn">
                            <li class="down_btn"><a href="documents/HOSEA Business Plan.pdf" download="HOSEA Business Plan">Download</a></li>
-                           <li><a href="#">Sign Up</a></li>
-                           <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                           <li><button type="button" id="sidebarCollapse">
-                              <img src="images/menu_icon.png" alt="#" />
-                              </button>
-                           </li>
+                           <span id ="get-a-quote"><li><a href="#">Get A Quote</a></li></span>
+                        <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li> 
                         </ul>
                      </div>
                   </div>
                </div>
             </div>
+
+            <!-- creating a row that will house our menu with a different colour though -->
+            <nav id="menuA" class="menuA">
+               <ul>
+                   <li><a href="#home"><i class='bx bxs-home'></i> &nbsp;Home</a></li>
+                   <li><a href="#about"><i class='bx bxs-info-circle'></i> &nbsp;About</a></li>
+                   <li><a href="about.html#services"><i class='bx bxs-briefcase'></i> &nbsp;Services</a></li>
+                   <li><a href="#contact"><i class='bx bxs-contact'></i> &nbsp;Contact</a></li>
+               </ul>
+           </nav>
+
+           <!-- the javascrip file that handles the menu-->
+           <script>
+               document.getElementById('menu-icon').addEventListener('click', function() {
+               var menu = document.getElementById('menuA');
+               if (menu.style.display === 'block') {
+                  menu.style.display = 'none';
+               } else {
+                  menu.style.display = 'block';
+                  }
+               });
+           </script>
          </header>
          <!-- end header inner -->
          <!-- end header -->
@@ -115,8 +145,8 @@
                            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
                               <div class="text-bg">
                                  <h1>Our<br>Vision</h1>
-                                 <p>To become the leading provider of smart campus solutions, revolutionizing the way students, staff, and visitors interact with university environments across Africa.</p>
-                                 <a class="read_more" href="#">Read more</a>
+                                 <p>To be a leading innovator in technology-driven solutions that enhance efficiency, sustainability, and social impact across diverse industries, creating a future where technology seamlessly improves everyday life and empowers communities. <br/>
+                                    To become the leading provider of smart campus solutions, revolutionizing the way students, staff, and visitors interact with university environments across Africa.</p>
                               </div>
                            </div>
                            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
@@ -135,8 +165,7 @@
                            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
                               <div class="text-bg">
                                  <h1>Our<br>Mission</h1>
-                                 <p>To provide a seamless and interactive campus navigation experience that enhances accessibility and engagement for all University of Limpopo stakeholders.</p>
-                                 <a class="read_more" href="#">Read more</a>
+                                 <p>HOSEA is dedicated to developing cutting-edge software and automation solutions tailored to the unique needs of various sectors. We strive to improve operational efficiency, foster sustainable practices, and drive social innovation, particularly in underserved communities. Through our dual-purpose innovation hub, we aim to advance research and development, empower future generations, and contribute to a more connected, efficient, and equitable world.</p>
                               </div>
                            </div>
                            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
@@ -155,10 +184,7 @@
                            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
                               <div class="text-bg">
                                  <h1>Our <br>Objectives</h1>
-                                 <p>•	Successfully launch the Campus Docent app at the University of Limpopo. <br>
-                                    •	Achieve 80% adoption rate among students and staff within the first year.<br>
-                                    <br>
-                                <a class="read_more" href="#">Read more</a>
+                                 <p>HOSEA aims to drive innovation and operational efficiency through technology by developing tailored software solutions for various sectors, including education, healthcare, agriculture, and retail. HOSEA is dedicated to making a positive social impact, supporting sustainable development, and fostering technological growth in both urban and rural areas. 
                               </div>
                            </div>
                            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
@@ -193,7 +219,7 @@
                         <h2>About <span class="blu">Us</span></h2>
                         <p>HOSEA, originally focused on developing innovative tech solutions for educational institutions, is expanding its scope to include the manufacturing and agricultural sectors. By introducing Siemens PLCs for automated conveyor systems, HOSEA aims to enhance operational efficiency and productivity in these industries.</p>
                         <p>HOSEA, a private company spun out of the University of Limpopo, focusing on developing innovative software solutions. Our latest project, the University of Limpopo Campus Docent app, aims to enhance the campus experience for students, staff, and visitors through real-time navigation assistance and comprehensive information about campus facilities and events.</p>
-                        <a class="read_more">Read More</a>
+                        <a class="read_more" href="about.html">Read More</a>
                      </div>
                   </div>
                </div>
@@ -259,7 +285,12 @@
                   <div class="col-md-7">
                      <div class="titlepage">
                         <h2>Succesfull <span class="blu">Projects</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit </p>
+                        <h4>Campus Navigation Application </h4>
+                         <p> Our Campus Navigation Application is designed to simplify the student experience by providing a seamless way to find locations and services across campus.</p>
+                        <h4>Device Control Management System</h4>
+                        <p> This advanced Device Control Management System enhances campus security by allowing for centralized control and monitoring of devices across the campus.</p>
+                        <h4>Doctor-Patient Consultation Application</h4>
+                        <p>Our Doctor-Patient Consultation Application streamlines the healthcare experience by offering an intuitive platform for booking consultations, managing appointments, and handling related services. </p>       
                         <a class="read_more">Read More</a>
                      </div>
                   </div>
@@ -323,20 +354,20 @@
                                  <h3>Partners</h3>
                               </div>
                               <ul class="location_icon">
-                                 <li><a href="www.knack.com"><img src="images/knack.png" width="100" height="100"/></a></li>
-                                 <li><a href="www.mappedin.com"><img src="images/mappedin.png" width="100" height="100"/></a></li>
-                                 <li><a href="www.vodacom.com"><img src="images/vodacomlogo.png" width="100" height="100"/></a></li>
-                                 <li><a href="www.GDG.com"><img src="images/GDG.png" width="100" height="100"/></a></li>
+                                 <li><a href="https://www.knack.com/"><img src="images/knack.png" width="100" height="100"/></a></li>
+                                 <li><a href="https://www.mappedin.com/"><img src="images/mappedin.png" width="100" height="100"/></a></li>
+                                 <li><a href="https://www.vodacom.co.za/"><img src="images/vodacomlogo.png" width="100" height="100"/></a></li>
+                                 <li><a href="https://developers.google.com/community/gdg"><img src="images/GDG.png" width="100" height="100"/></a></li>
                               </ul>
                            </div>
                            <div class="col-md-4 col-sm-6">
                               <div class="address">
                                  <h3>Links</h3>
                                  <ul class="Menu_footer">
-                                    <li class="active"> <a href="#">Home</a> </li>
-                                    <li><a href="#about">About </a> </li>
-                                    <li><a href="#work">Work</a> </li>
-                                    <li><a href="#contact">Contact </a> </li>
+                                    <li > <a href="#"><i class='bx bxs-home'></i>&nbsp; Home</a> </li>
+                                    <li><a href="#about"><i class='bx bxs-info-circle'></i>&nbsp; About </a></li>
+                                    <li><a href="#work"><i class='bx bxs-briefcase'></i>&nbsp; Work</a></li>
+                                    <li><a href="#contact"><i class='bx bxs-contact'></i>&nbsp; Contact </a> </li>
                                  </ul>
                               </div>
                            </div>
@@ -349,11 +380,11 @@
                                  <h3>Follow Us</h3>
                               </div>
                               <ul class="social_icon">
-                                 <li><a href="#">Facebook <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                 <li><a href="#"> Twitter<i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                 <li><a href="#"> Linkedin<i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                                 <li><a href="#"> Youtube<i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                                 <li><a href="#"> Instagram<i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                 <li><a href="https://www.facebook.com">Facebook <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                 <li><a href="https://www.twitter.com"> Twitter<i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                 <li><a href="https://www.linkedin.com"> Linkedin<i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                                 <li><a href="https://www.youtube.com"> Youtube<i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                 <li><a href="https://www.instagram.com"> Instagram<i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                               </ul>
                            </div>
                            <div class="col-md-7 col-sm-6">
